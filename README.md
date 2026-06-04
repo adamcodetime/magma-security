@@ -1,56 +1,183 @@
-# Magma Security
+# 🌋 Magma Security
 
-A web safety application developed by **Magma**.
+**Web Safety for Everyone**
 
-## Overview
+Magma Security is a native macOS application built by **Magma** that helps users evaluate the safety and trustworthiness of websites before interacting with them.
 
-Magma Security helps users evaluate the safety of websites before interacting with them. The application is designed to identify potentially suspicious web content and provide security-focused insights to encourage safer browsing habits.
-
-Built for a school hackathon, Magma Security demonstrates how modern software can help users recognize online threats such as phishing pages, scam websites, and malicious links.
-
-## Features
-
-- Website safety analysis
-- Suspicious website detection
-- Security-focused interface
-- Fast native macOS experience
-- Simple and intuitive design
-
-## Screenshots
-
-_Add screenshots here if desired._
+Created for a school hackathon, the project aims to make online safety more accessible through a simple, fast, and user-friendly experience.
 
 ---
 
-## Installation (Prebuilt App)
+## ✨ Features
 
-1. Download `Magma Security.app.zip`
-2. Extract the ZIP archive
-3. Move **Magma Security.app** to your Applications folder (optional)
-4. Launch the application
+* 🔍 Website safety analysis
+* 🛡️ Detection of suspicious or potentially malicious domains
+* ⚡ Fast native macOS performance
+* 🎨 Clean and modern user interface
+* 🌐 Easy website reputation checks
+* 🔒 Privacy-focused design
 
-### First Launch
+---
 
-Because the app may not be notarized by Apple, macOS might display a warning.
+## 📸 Screenshots
 
-To open it:
+### Main Dashboard
+
+*Add a screenshot here.*
+
+### Website Analysis
+
+*Add a screenshot here.*
+
+---
+
+## 🚀 Download
+
+Download the latest macOS release from the project page:
+
+**Magma Security.app.zip**
+
+1. Download the ZIP file
+2. Extract the archive
+3. Open the application
+
+---
+
+## 🍎 Installing on macOS
+
+Because Magma Security is a hackathon project and may not be notarized by Apple, macOS may display a warning on first launch.
+
+To open the application:
 
 1. Right-click **Magma Security.app**
-2. Click **Open**
+2. Select **Open**
 3. Click **Open** again when prompted
+
+After the first launch, the app should open normally.
 
 ---
 
-## Building from Source
+## 🛠 Building From Source
 
 ### Requirements
 
-- macOS
-- Xcode 16 or later
-- Swift 5.10+
+* macOS 14+
+* Xcode 16+
+* Swift 5.10+
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/magma-security.git
+git clone https://github.com/YOUR_USERNAME/magma-security.git
 cd magma-security
+```
+
+### Open the Project
+
+```bash
+open "Magma Security.xcodeproj"
+```
+
+Or open the project manually in Xcode.
+
+### Configure Signing
+
+1. Open Xcode
+2. Select the project
+3. Select the **Magma Security** target
+4. Open **Signing & Capabilities**
+5. Choose your Apple ID under **Team**
+
+A free Personal Team account is sufficient for local development.
+
+### Run the Application
+
+1. Select **My Mac** as the target device
+2. Press **⌘R**
+
+### Build a Release Version
+
+```bash
+xcodebuild \
+-scheme "Magma Security" \
+-configuration Release
+```
+
+---
+
+## 📖 How to Use
+
+### Analyze a Website
+
+1. Launch Magma Security
+2. Enter a website URL
+3. Start the analysis
+4. Review the generated safety information
+
+### Recommended Workflow
+
+Before visiting an unfamiliar website:
+
+1. Copy the website URL
+2. Paste it into Magma Security
+3. Review the analysis
+4. Determine whether the website appears trustworthy
+
+---
+
+## 🏗 Project Structure
+
+```text
+Magma Security/
+├── App/
+├── Views/
+├── Models/
+├── Services/
+├── Utilities/
+├── Assets.xcassets/
+└── Magma Security.xcodeproj
+```
+
+---
+
+## 🎯 Motivation
+
+Online scams, phishing attacks, and malicious websites continue to affect millions of users every year.
+
+Magma Security was created to explore how software can help people make safer decisions online by providing clear information about websites before they interact with them.
+
+---
+
+## 🔒 Privacy
+
+Magma Security is designed with privacy in mind.
+
+* No user accounts
+* No personal data collection
+* Local-first functionality whenever possible
+
+---
+
+## ⚠️ Disclaimer
+
+Magma Security is a student hackathon project intended for educational and demonstration purposes.
+
+The application should not be considered a replacement for professional cybersecurity software, enterprise security solutions, or expert security advice.
+
+Always use your own judgment when browsing online.
+
+---
+
+## 👥 Team
+
+Built by **Magma**
+
+School Hackathon 2025
+
+---
+
+## 📄 License
+
+This project is provided for educational purposes.
+
+© 2025 Magma
