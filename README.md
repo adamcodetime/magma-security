@@ -2,123 +2,58 @@
 
 **Web Safety for Everyone**
 
-Magma Security is a native macOS application built by **Magma** that helps users evaluate the safety and trustworthiness of websites before interacting with them.
+Magma Security is a cross-platform web safety application built by **Magma** that helps users evaluate the safety and trustworthiness of websites before interacting with them. 
 
-Created for a school hackathon, the project aims to make online safety more accessible through a simple, fast, and user-friendly experience.
+Created for a school hackathon, the project aims to make online safety more accessible through a simple, fast, responsive layout engine available for both **macOS** and **Windows**.
 
 ---
 
 ## ✨ Features
 
-* Quiz
-* Share your score
-* Exit from trivia
-* Dark and Light mode switcher
+* Dynamic Cybersecurity Trivia Engine
+* Educational tip review layouts
+* Safe progress reset checks (Apple/Native styled confirm alerts)
+* Score sharing outputs
+* Integrated Theme Palette selector (Dark & Light appearance switcher)
 
 ---
 
-## 🚀 Download
+## 🚀 Downloads
 
-Download the latest macOS release from the project page:
+Download the latest release binaries from the project distribution page:
 
-**Magma Security.app.zip**
-
-1. Download the ZIP file
-2. Extract the archive
-3. Open the application
+* **MagmaSecurity_macOS.zip** (Native SwiftUI Application)
+* **MagmaSecurity_Windows.zip** (CustomTkinter Windows Binary Package)
 
 ---
 
-## 🍎 Installing on macOS
+## 💻 Installation Instructions
 
-Because Magma Security is a hackathon project and may not be notarized by Apple, macOS may display a warning on first launch.
+### 🍎 Installing on macOS
+Because Magma Security is a hackathon project and is not signed or notarized by Apple, macOS may display a developer warning on your first run.
 
-To open the application:
+1. Download and extract **MagmaSecurity_macOS.zip**.
+2. **Right-click** (or Control-click) `Magma Security.app` and select **Open**.
+3. Click **Open** again on the confirmation pop-up prompt.
+*Note: After this first clearance step, the app will launch normally via double-click.*
 
-1. Right-click **Magma Security.app**
-2. Select **Open**
-3. Click **Open** again when prompted
+### 🪟 Installing on Windows
+The Windows companion edition relies on bundled runtimes. Ensure all extracted companion directories remain unified.
 
-After the first launch, the app should open normally.
+1. Download and extract **MagmaSecurity_Windows.zip** completely.
+2. Open the extracted directory folder location.
+3. Launch `MagmaSecurity.exe` to start the interface.
+*Note: If Windows SmartScreen blocks execution because of an unrecognized local signature, click **More Info** followed by **Run Anyway** to bypass.*
 
 ---
 
 ## 🛠 Building From Source
 
 ### Requirements
-
-* macOS 14+
-* Xcode 16+
-* Swift 5.10+
+* **macOS Target:** Xcode 16+, Swift 5.10+
+* **Windows Target:** Python 3.12+, `pip install customtkinter`
 
 ### Clone the Repository
-
 ```bash
-git clone https://github.com/adamcodetime/magma-security.git
+git clone [https://github.com/adamcodetime/magma-security.git](https://github.com/adamcodetime/magma-security.git)
 cd magma-security
-```
-
-### Open the Project
-
-```bash
-open "Magma Security.xcodeproj"
-```
-
-Or open the project manually in Xcode.
-
-### Configure Signing
-
-1. Open Xcode
-2. Select the project
-3. Select the **Magma Security** target
-4. Open **Signing & Capabilities**
-5. Choose your Apple ID under **Team**
-
-A free Personal Team account is sufficient for local development.
-
-### Run the Application
-
-1. Select **My Mac** as the target device
-2. Press **⌘R**
-
-### Build a Release Version
-
-```bash
-xcodebuild \
--scheme "Magma Security" \
--configuration Release
-```
-
----
-
-## 🎯 Motivation
-
-Online scams, phishing attacks, and malicious websites continue to affect millions of users every year.
-
-Magma Security was created to explore how software can help people make safer decisions online by providing clear information about websites before they interact with them.
-
----
-
-## ⚠️ Disclaimer
-
-Magma Security is a student hackathon project intended for educational and demonstration purposes.
-
-The application should not be considered a replacement for professional cybersecurity software, enterprise security solutions, or expert security advice.
-
-Always use your own judgment when browsing online.
-
----
-
-## 👥 Team
-
-Built by **Magma**
-
-School Hackathon 2025
-
----
-
-## 📄 License
-
-This project is provided for educational purposes.
-
-© 2025 Magma
