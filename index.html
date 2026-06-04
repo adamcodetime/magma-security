@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magma Security</title>
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #ff6b35;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(30,41,59,0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.logo {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.download {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 14px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.download:hover {
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="logo">🌋</div>
+
+    <h1>Magma Security</h1>
+
+    <p class="tagline">
+        Safer browsing. Smarter decisions.
+    </p>
+
+    <p class="description">
+        A macOS web safety tool built by <strong>Magma</strong>.
+        Analyze websites, identify suspicious links, and stay
+        safer online.
+    </p>
+
+    <a class="download" href="MagmaSecurity.zip" download>
+        ⬇ Download for macOS
+    </a>
+
+    <div class="footer">
+        School Hackathon 2025 • Built with ❤️ by Magma
+    </div>
+</div>
+
+</body>
+</html>
