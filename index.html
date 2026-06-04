@@ -10,6 +10,7 @@
     --bg: #0f172a;
     --card: #1e293b;
     --accent: #ff6b35;
+    --accent-blue: #007aff;
     --text: #f8fafc;
     --muted: #94a3b8;
 }
@@ -37,7 +38,7 @@ body {
     padding: 40px;
     border-radius: 24px;
     text-align: center;
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
     box-shadow: 0 20px 40px rgba(0,0,0,.3);
 }
@@ -63,25 +64,65 @@ h1 {
     color: #cbd5e1;
 }
 
+.download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+@media(min-width: 400px) {
+    .download-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 .download {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    background: var(--accent);
     color: white;
-    padding: 14px 28px;
+    padding: 14px 24px;
     border-radius: 14px;
     font-weight: 700;
     transition: .2s;
+    flex: 1;
+}
+
+.download.mac {
+    background: var(--accent);
+}
+
+.download.windows {
+    background: var(--accent-blue);
 }
 
 .download:hover {
     transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.instructions-link {
+    display: inline-block;
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.instructions-link:hover {
+    color: var(--text);
 }
 
 .footer {
-    margin-top: 25px;
+    margin-top: 15px;
     color: var(--muted);
     font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
 }
 </style>
 </head>
@@ -98,13 +139,21 @@ h1 {
     </p>
 
     <p class="description">
-        A macOS web safety tool built by <strong>Magma</strong>.
-        Analyze websites, identify suspicious links, and stay
-        safer online.
+        A multi-platform web safety tool built by <strong>Magma</strong>. 
+        Take interactive quizzes, evaluate cybersecurity vectors, and practice staying safer online.
     </p>
 
-    <a class="download" href="MagmaSecurity.zip" download>
-        ⬇ Download for macOS
+    <div class="download-container">
+        <a class="download mac" href="MagmaSecurity_macOS.zip" download>
+            🍏 Download for macOS
+        </a>
+        <a class="download windows" href="MagmaSecurity_Windows.zip" download>
+            🪟 Download for Windows
+        </a>
+    </div>
+
+    <a href="#setup-guide" class="instructions-link" onclick="alert('Installation Guide:\n\n🍏 macOS:\n1. Extract ZIP\n2. Right-click Magma Security.app and choose Open.\n\n🪟 Windows:\n1. Extract the full ZIP file.\n2. Open the directory and launch MagmaSecurity.exe.')">
+        Need help installing? View setup guide
     </a>
 
     <div class="footer">
