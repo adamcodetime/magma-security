@@ -10,7 +10,7 @@
     --bg: #0f172a;
     --card: #1e293b;
     --accent: #ff6b35;
-    --accent-blue: #007aff;
+    --accent-blue: #38bdf8;
     --text: #f8fafc;
     --muted: #94a3b8;
 }
@@ -68,10 +68,10 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-@media(min-width: 400px) {
+@media(min-width: 450px) {
     .download-container {
         flex-direction: row;
         justify-content: center;
@@ -95,8 +95,8 @@ h1 {
     background: var(--accent);
 }
 
-.download.windows {
-    background: var(--accent-blue);
+.download.windows-src {
+    background: #0284c7;
 }
 
 .download:hover {
@@ -104,29 +104,47 @@ h1 {
     filter: brightness(1.1);
 }
 
-.instructions-link {
-    display: inline-block;
-    color: var(--muted);
-    font-size: 0.9rem;
-    text-decoration: underline;
-    margin-bottom: 20px;
-    transition: 0.2s;
+.setup-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 15px;
 }
 
-.instructions-link:hover {
-    color: var(--text);
+.setup-box h3 {
+    font-size: 1.05rem;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.setup-box ol {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.code-snippet {
+    background: #000;
+    font-family: monospace;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #34d399;
+    display: block;
+    margin: 6px 0;
 }
 
 .footer {
-    margin-top: 15px;
+    margin-top: 25px;
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
+    padding-top: 15px;
 }
 </style>
 </head>
-
 <body>
 
 <div class="card">
@@ -139,22 +157,30 @@ h1 {
     </p>
 
     <p class="description">
-        A multi-platform web safety tool built by <strong>Magma</strong>. 
-        Take interactive quizzes, evaluate cybersecurity vectors, and practice staying safer online.
+        An interactive security validation utility built by <strong>Magma</strong> to explore threat vector criteria, run mock environments, and assess online risk.
     </p>
 
     <div class="download-container">
         <a class="download mac" href="MagmaSecurity_macOS.zip" download>
-            🍏 Download for macOS
+            🍏 Desktop for macOS
         </a>
-        <a class="download windows" href="MagmaSecurity_Windows.zip" download>
-            🪟 Download for Windows
+        <a class="download windows-src" href="magma_windows.py" download>
+            🐍 Windows Python Source
         </a>
     </div>
 
-    <a href="#setup-guide" class="instructions-link" onclick="alert('Installation Guide:\n\n🍏 macOS:\n1. Extract ZIP\n2. Right-click Magma Security.app and choose Open.\n\n🪟 Windows:\n1. Extract the full ZIP file.\n2. Open the directory and launch MagmaSecurity.exe.')">
-        Need help installing? View setup guide
-    </a>
+    <div class="setup-box">
+        <h3>🚀 Windows Source Installation Guide</h3>
+        <ol>
+            <li>Download and install <strong>Python 3.12.1</strong> from the official release site (ensure the checkbox to add Python to PATH is selected).</li>
+            <li>Open your terminal/command prompt and download the graphical UI toolkit:
+                <span class="code-snippet">pip install customtkinter</span>
+            </li>
+            <li>Navigate to your downloaded script location and launch the program frame:
+                <span class="code-snippet">python mag.py</span>
+            </li>
+        </ol>
+    </div>
 
     <div class="footer">
         School Hackathon 2025 • Built with ❤️ by Magma
