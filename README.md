@@ -10,24 +10,10 @@ Created for a school hackathon, the project aims to make online safety more acce
 
 ## ✨ Features
 
-* 🔍 Website safety analysis
-* 🛡️ Detection of suspicious or potentially malicious domains
-* ⚡ Fast native macOS performance
-* 🎨 Clean and modern user interface
-* 🌐 Easy website reputation checks
-* 🔒 Privacy-focused design
-
----
-
-## 📸 Screenshots
-
-### Main Dashboard
-
-*Add a screenshot here.*
-
-### Website Analysis
-
-*Add a screenshot here.*
+* Quiz
+* Share your score
+* Exit from trivia
+* Dark and Light mode switcher
 
 ---
 
@@ -68,7 +54,7 @@ After the first launch, the app should open normally.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/magma-security.git
+git clone https://github.com/adamcodetime/magma-security.git
 cd magma-security
 ```
 
@@ -105,56 +91,11 @@ xcodebuild \
 
 ---
 
-## 📖 How to Use
-
-### Analyze a Website
-
-1. Launch Magma Security
-2. Enter a website URL
-3. Start the analysis
-4. Review the generated safety information
-
-### Recommended Workflow
-
-Before visiting an unfamiliar website:
-
-1. Copy the website URL
-2. Paste it into Magma Security
-3. Review the analysis
-4. Determine whether the website appears trustworthy
-
----
-
-## 🏗 Project Structure
-
-```text
-Magma Security/
-├── App/
-├── Views/
-├── Models/
-├── Services/
-├── Utilities/
-├── Assets.xcassets/
-└── Magma Security.xcodeproj
-```
-
----
-
 ## 🎯 Motivation
 
 Online scams, phishing attacks, and malicious websites continue to affect millions of users every year.
 
 Magma Security was created to explore how software can help people make safer decisions online by providing clear information about websites before they interact with them.
-
----
-
-## 🔒 Privacy
-
-Magma Security is designed with privacy in mind.
-
-* No user accounts
-* No personal data collection
-* Local-first functionality whenever possible
 
 ---
 
